@@ -1,0 +1,47 @@
+=== TODO ===
+- Make the Back button circular
+- Hash passwords to make them more secure
+- STOP connecting 3 times in CreateAccountScreenControllers
+- Make usernames case-insensitive and adjust duplicity check
+- Set icons for the program bar OR get rid of the top program bar
+
+=== NOTES ===
+You can use MARGINS to adjust the spacing of a node WITHIN a GridPane.
+
+Use "-fx-background-color: transparent;" to make a button transparent.
+
+"In a few words: The constructor is called first, then any @FXML annotated fields are populated, then initialize() is called.
+So the constructor does NOT have access to @FXML fields referring to components defined in the .fxml file, while initialize() does have access to them."
+	- https://stackoverflow.com/questions/34785417/javafx-fxml-controller-constructor-vs-initialize-method
+
+Tabbing order of JavaFX elements:
+	You have Hierarchy panel in left column. There are all your components from scene. Their order represents focus traversal order and it responds to their order in FXML file.
+
+Making sure that no TextField is selected in a new pane: https://community.oracle.com/message/10854574
+
+=== RESOURCES ===
+= Uncategorized =
+https://stackoverflow.com/questions/43291095/javafx-scene-builder-button-event-doesnt-work
+https://stackoverflow.com/questions/40750526/javafx-best-practice-for-navigating-between-ui-screens | Stage vs. Scene JavaFX
+https://code.makery.ch/blog/javafx-8-event-handling-examples/ | JavaFX 8 Lambda Expression Screen Switching
+Switching Screens: https://gist.github.com/pethaniakshay/302072fda98098a24ce382a361bdf477
+
+
+= SQL Resources =
+https://www.microsoft.com/en-us/sql-server/developer-get-started/java/windows/step/2.html | SQL statement examples
+https://stackoverflow.com/questions/2225221/closing-database-connections-in-java | Closing database resources in Java
+
+
+= Password Resources =
+http://www.mindrot.org/projects/jBCrypt/
+https://nakedsecurity.sophos.com/2013/11/20/serious-security-how-to-store-your-users-passwords-safely/
+https://stackoverflow.com/questions/37701116/sending-password-safely-from-the-front-end-to-the-back-end-using-md5 | Use bcrypt instead, apparently MD5 isn’t secure
+	
+	
+= Money? =
+https://stackoverflow.com/questions/8148684/what-is-the-best-data-type-to-use-for-money-in-java-app
+
+
+
+=== Back Button citation ===
+Icons made by Robin Kylander from www.flaticon.com. Licensed by Creative Commons BY 3.0

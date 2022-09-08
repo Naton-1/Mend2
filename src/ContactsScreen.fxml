@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" focusTraversable="true" prefHeight="600.0" prefWidth="1000.0" styleClass="background-pane" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ContactsScreenController">
+   <children>
+      <Label alignment="CENTER" layoutX="358.0" layoutY="65.0" text="Trusted Contacts" textOverrun="CLIP" wrapText="true" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="50.0">
+         <font>
+            <Font name="SansSerif Regular" size="39.0" />
+         </font>
+      </Label>
+      <Button fx:id="backButton" layoutX="30.0" layoutY="30.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#goBack" style="-fx-background-radius: 50;" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="30.0">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" preserveRatio="true">
+               <image>
+                  <Image url="@../Back%20Arrow.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+         </graphic>
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </padding>
+      </Button>
+      <ScrollPane fitToWidth="true" hbarPolicy="NEVER" layoutX="415.0" layoutY="235.0" maxHeight="450.0" prefHeight="450.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="130.0">
+         <content>
+            <VBox fx:id="vbox" maxHeight="450.0" prefHeight="450.0" styleClass="background-pane">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></VBox>
+         </content></ScrollPane>
+      <Button fx:id="addContactButton" layoutX="883.0" layoutY="16.0" mnemonicParsing="false" onAction="#addContact" text="Add Contact" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

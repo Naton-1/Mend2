@@ -1,0 +1,31 @@
+.button {
+	-fx-background-color: #90CAF9;
+}
+
+.button:focused {
+	-fx-background-color: #90CAF9;
+}
+
+.button:pressed {
+	-fx-background-color: #42A5F5;
+}
+
+.combo-box {
+	-fx-background-color: #90CAF9;
+}
+
+.combo-box:pressed {
+	-fx-background-color: #42A5F5;
+}
+
+.combo-box:focused {
+	-fx-background-color: #90CAF9;
+}
+
+.root.popup {
+	-fx-background-color: #C5CAE9;
+}
+
+.background-pane {
+	-fx-background-color: #E3F2FD;
+}

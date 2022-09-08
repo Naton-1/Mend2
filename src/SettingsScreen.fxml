@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="450.0" prefWidth="650.0" styleClass="background-pane" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SettingsScreenController">
+   <children>
+      <Label alignment="CENTER" layoutX="260.0" layoutY="48.0" text="Settings" textOverrun="CLIP" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="40.0">
+         <font>
+            <Font name="SansSerif Regular" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="backButton" layoutX="40.0" layoutY="40.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#goBack" style="-fx-background-radius: 50;" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="30.0">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" preserveRatio="true">
+               <image>
+                  <Image url="@../Back%20Arrow.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+         </graphic>
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </padding>
+      </Button>
+      <VBox alignment="TOP_CENTER" layoutX="95.0" layoutY="157.0" prefHeight="94.0" prefWidth="170.0" spacing="20.0" AnchorPane.leftAnchor="115.0" AnchorPane.topAnchor="165.0">
+         <children>
+            <Button fx:id="themeButton" alignment="CENTER" mnemonicParsing="false" onAction="#goToThemePicker" prefWidth="170.0" style="-fx-background-radius: 20;" text="Theme Picker">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="changeNameButton" alignment="CENTER" mnemonicParsing="false" onAction="#changeName" prefWidth="170.0" text="Change Name">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="402.0" layoutY="172.0" prefHeight="151.0" prefWidth="170.0" spacing="20.0" AnchorPane.rightAnchor="115.0" AnchorPane.topAnchor="165.0">
+         <children>
+            <Button fx:id="changeEmailButton" alignment="CENTER" mnemonicParsing="false" onAction="#changeEmail" prefWidth="170.0" text="Change Email">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="changePasswordButton" alignment="CENTER" mnemonicParsing="false" onAction="#changePassword" prefWidth="170.0" text="Change Password">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,4 @@
+- Leave an empty line between the (start and end of a method) and (the code)
+- Always put the initialize() method at the top
+
+Use BigDecimal for money!!!
